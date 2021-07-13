@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>[LATIHAN DOM] Bermain dengan Warna</title>
+  </head>
+  <style media="screen">
+    html, body { font-family: sans-serif; text-align: center; height: 100%; }
+    h1, h3 { font-family: arial, sans-serif; }
+    button { display: block; margin: 0 auto 10px auto; border: 3px solid transparent; padding: 10px; background: #39d; color: #fff; cursor: pointer; font-weight: bold;}
+    button:hover { border: 3px solid #333; }
+    .kotak { width: 25px; height: 25px; margin: 10px auto; color: #fff; }
+    .merah { background: crimson; }
+    .hijau {  background: limegreen; }
+    .biru { background: #39d; }
+    .opacity { background: rgba(0,0,0,.2); }
+    input[type="range"] { margin-bottom: 20px; }
+
+    .dark { background: #232323; color: #fff; }
+  </style>
+  <body>
+
+    <div class="container">
+      <h1>Bermain dengan Warna</h1>
+      <button type="button" id="ubahBackground">Ubah Background Dark!</button>
+    </div>
+
+    <br><br>
+
+    <h3>Ubah Warna Background dengan RGB / RGBA! (slider & color picker)</h3>
+    <section id="a">
+      <div class="kotak merah"></div>
+        <input type="range" name="sMerah" id="sMerah" min="0" max="255">
+
+      <div class="kotak hijau"></div>
+        <input type="range" name="sHijau" id="sHijau" min="0" max="255">
+
+      <div class="kotak biru"></div>
+        <input type="range" name="sBiru" id="sBiru" min="0" max="255">
+
+      <div class="kotak opacity"></div>
+        <input type="range" name="sOpacity" id="sOpacity" min="0" max="1">
+    </section>
+
+      <input type="color" style="margin-bottom:10px;">
+
+
+  </body>
+  <script src="script.js" charset="utf-8"></script>
+</html>
